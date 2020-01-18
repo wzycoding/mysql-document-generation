@@ -1,0 +1,16 @@
+server:
+  port: 8999
+spring:
+  datasource:
+    username: root
+    password: "Ll03001360"
+    url: jdbc:mysql://localhost:3306/information_schema?useUnicode=true&&allowMultiQueries=true&autoReconnect=true&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+logging:
+  level:
+    com.mdg.dao: DEBUG /
+
+mybatis:
+  configuration:
+    #下滑线转驼峰
+    map-underscore-to-camel-case: true

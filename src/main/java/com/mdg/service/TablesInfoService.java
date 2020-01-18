@@ -122,7 +122,7 @@ public class TablesInfoService {
             }
         }
         //保存到本地
-        File file = new File("/Users/blusk123/seckill-sql-document.xls");
+        File file = new File("/Users/sql-document.xls");
         FileOutputStream outputStream = new FileOutputStream(file);
         //将Excel写入输出流中
         workbook.write(outputStream);

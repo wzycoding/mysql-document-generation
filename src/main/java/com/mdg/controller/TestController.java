@@ -39,16 +39,4 @@ public class TestController {
     public String genDocument(@RequestParam("databaseName") String databaseName) throws IOException {
         return tablesInfoService.generateDocument(databaseName);
     }
-
-
-    @GetMapping(value = "/test")
-    @ResponseBody
-    public String genDocument(long a) throws IOException {
-
-        return "success";
-    }
-
-
-
-
 }
